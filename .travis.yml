@@ -8,4 +8,4 @@ services:
 install:
   - pipenv install
 script:
-  - python src/manage.py test
+  - python manage.py test
