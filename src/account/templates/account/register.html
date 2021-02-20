@@ -1,0 +1,119 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="card mt-5">
+          <img
+            src=" {% static 'bootstrap/img/logo.jpg' %} "
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title text-muted">Sign Up here to start with us</h5>
+            <!-- <p class="card-text"></p> -->
+            <a href="" class="btn btn-sm btn-primary w-100">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i> Login
+              with facebook</a
+            >
+            <div class="row">
+              <div class="col-md-5">
+                <hr />
+              </div>
+              <div class="col-md-2 text-center">
+                <p class="text-muted">OR</p>
+              </div>
+              <div class="col-md-5">
+                <hr />
+              </div>
+            </div>
+
+            {% include "account/messages.html" %}
+
+            <form action=" {% url 'register' %} " method="post">
+              {% csrf_token %}
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  id="email"
+                  value="{{data.email }}"
+                  placeholder="Email"
+                  autofocus
+                />
+              </div>
+              <br />
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="name"
+                  id="name"
+                  value="{{data.name }}"
+                  placeholder="Enter Full Name"
+                />
+              </div>
+              <br />
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  id="username"
+                  value="{{data.username }}"
+                  placeholder="Enter Username"
+                />
+              </div>
+              <br />
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="password"
+                  name="password1"
+                  id="password1"
+                  value=""
+                  placeholder="Enter password"
+                />
+              </div>
+              <br />
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="password"
+                  name="password2"
+                  id="password2"
+                  value=""
+                  placeholder="Conform password"
+                />
+              </div>
+              <br />
+              <button type="submit" class="btn btn-sm btn-primary w-100">
+                Register
+              </button>
+            </form>
+            <small class="py-3">
+              By SigningUp, You Agree to our Terms, DataPolicy and Cookies
+              policy
+            </small>
+          </div>
+        </div>
+        <!-- add last login block -->
+        <div class="card">
+          <div class="card-body text-center">
+            <p>
+              Already Having an Account?<a href=" {% url 'login' %} ">Login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+{% endblock content %}

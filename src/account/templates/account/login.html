@@ -1,0 +1,93 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="card mt-5">
+          <img
+            src=" {% static 'bootstrap/img/logo.jpg' %} "
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <h2>Login</h2>
+            <!-- <h5 class="card-title text-muted">Sign Up here to start with us</h5> -->
+            <!-- <p class="card-text"></p> -->
+            <a href="" class="btn btn-sm btn-primary w-100">
+              <i class="fa fa-facebook-official" aria-hidden="true"></i> Login
+              with facebook</a
+            >
+            <div class="row">
+              <div class="col-md-5">
+                <hr />
+              </div>
+              <div class="col-md-2 text-center">
+                <p class="text-muted">OR</p>
+              </div>
+              <div class="col-md-5">
+                <hr />
+              </div>
+            </div>
+
+            {% include "account/messages.html" %}
+
+            <form action=" {% url 'login' %} " method="post">
+              {% csrf_token %}
+
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="text"
+                  name="username"
+                  id="username"
+                  value=""
+                  placeholder="Enter Username"
+                />
+              </div>
+              <br />
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="password"
+                  name="password"
+                  id="password"
+                  value=""
+                  placeholder="Enter password"
+                />
+              </div>
+
+              <br />
+              <button type="submit" class="btn btn-sm btn-primary w-100">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- add last login block -->
+        <div class="card">
+          <div class="card-body text-center">
+            <p>
+              Need a new account?<a href=" {% url 'register' %} ">SignUp</a>
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body text-center">
+            <p>
+              Already Having an Account?<a href=" {% url 'login' %} "
+                >forgot password</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+{% endblock content %}

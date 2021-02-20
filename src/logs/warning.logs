@@ -1,0 +1,893 @@
+WARNING 2021-02-10 15:14:53,181 views 13363 139923969386240 request is processing
+WARNING 2021-02-12 17:35:14,969 views 16067 139990291613440 request is processing
+WARNING 2021-02-19 22:56:22,376 views 20873 139757855655680 request is processing
+WARNING 2021-02-19 22:56:22,849 basehttp 20873 139757855655680 "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 404 1808
+WARNING 2021-02-19 22:56:22,849 basehttp 20873 139757855655680 "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 404 1808
+WARNING 2021-02-19 22:56:23,077 log 20873 139757845427968 Not Found: /favicon.ico
+WARNING 2021-02-19 22:56:23,077 log 20873 139757845427968 Not Found: /favicon.ico
+WARNING 2021-02-19 22:56:23,078 basehttp 20873 139757845427968 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-19 22:56:23,078 basehttp 20873 139757845427968 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-19 22:56:32,186 basehttp 20873 139757845427968 "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 404 1808
+WARNING 2021-02-19 22:56:32,186 basehttp 20873 139757845427968 "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 404 1808
+WARNING 2021-02-19 22:57:07,682 views 20873 139757845427968 request is processing
+WARNING 2021-02-19 22:57:07,802 basehttp 20873 139757845427968 "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 404 1808
+WARNING 2021-02-19 22:57:07,802 basehttp 20873 139757845427968 "GET /static/bootstrap/css/bootstrap.css HTTP/1.1" 404 1808
+WARNING 2021-02-19 23:09:59,727 views 20873 139757845427968 request is processing
+WARNING 2021-02-19 23:10:29,533 views 20873 139757845427968 request is processing
+WARNING 2021-02-19 23:10:47,158 views 20873 139757845427968 request is processing
+WARNING 2021-02-20 09:14:44,594 views 10674 140126499714816 request is processing
+WARNING 2021-02-20 09:14:45,078 log 10674 140126499714816 Not Found: /favicon.ico
+WARNING 2021-02-20 09:14:45,078 log 10674 140126499714816 Not Found: /favicon.ico
+WARNING 2021-02-20 09:14:45,082 basehttp 10674 140126499714816 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-20 09:14:45,082 basehttp 10674 140126499714816 "GET /favicon.ico HTTP/1.1" 404 12538
+WARNING 2021-02-20 09:25:09,706 log 10674 140126499714816 Not Found: /account/register/...
+WARNING 2021-02-20 09:25:09,706 log 10674 140126499714816 Not Found: /account/register/...
+WARNING 2021-02-20 09:25:09,708 basehttp 10674 140126499714816 "GET /account/register/... HTTP/1.1" 404 12647
+WARNING 2021-02-20 09:25:09,708 basehttp 10674 140126499714816 "GET /account/register/... HTTP/1.1" 404 12647
+WARNING 2021-02-20 09:26:21,188 log 10674 140126499714816 Not Found: /account/register/...
+WARNING 2021-02-20 09:26:21,188 log 10674 140126499714816 Not Found: /account/register/...
+WARNING 2021-02-20 09:26:21,199 basehttp 10674 140126499714816 "GET /account/register/... HTTP/1.1" 404 12647
+WARNING 2021-02-20 09:26:21,199 basehttp 10674 140126499714816 "GET /account/register/... HTTP/1.1" 404 12647
+WARNING 2021-02-20 10:35:24,610 log 16895 139848899884800 Forbidden (CSRF token missing or incorrect.): /account/register/
+WARNING 2021-02-20 10:35:24,644 basehttp 16895 139848899884800 "POST /account/register/ HTTP/1.1" 403 12455
+WARNING 2021-02-20 10:35:24,644 basehttp 16895 139848899884800 "POST /account/register/ HTTP/1.1" 403 12455
+ERROR 2021-02-20 10:36:24,773 log 16895 139848899884800 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 9, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:36:24,773 log 16895 139848899884800 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 9, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:36:24,803 basehttp 16895 139848899884800 "GET /account/register/ HTTP/1.1" 500 185035
+ERROR 2021-02-20 10:36:24,803 basehttp 16895 139848899884800 "GET /account/register/ HTTP/1.1" 500 185035
+ERROR 2021-02-20 10:37:14,969 log 16895 139848899884800 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 9, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:37:14,969 log 16895 139848899884800 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 9, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:37:14,994 basehttp 16895 139848899884800 "GET /account/register/ HTTP/1.1" 500 185197
+ERROR 2021-02-20 10:37:14,994 basehttp 16895 139848899884800 "GET /account/register/ HTTP/1.1" 500 185197
+ERROR 2021-02-20 10:37:23,283 log 16895 139848899884800 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 9, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:37:23,283 log 16895 139848899884800 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 9, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:37:23,306 basehttp 16895 139848899884800 "GET /account/register/ HTTP/1.1" 500 185197
+ERROR 2021-02-20 10:37:23,306 basehttp 16895 139848899884800 "GET /account/register/ HTTP/1.1" 500 185197
+ERROR 2021-02-20 10:37:59,974 log 17149 140299779950336 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 10, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:37:59,974 log 17149 140299779950336 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 10, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:38:00,012 basehttp 17149 140299779950336 "GET /account/register/ HTTP/1.1" 500 185186
+ERROR 2021-02-20 10:38:00,012 basehttp 17149 140299779950336 "GET /account/register/ HTTP/1.1" 500 185186
+ERROR 2021-02-20 10:38:10,997 log 17149 140299779950336 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 10, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:38:10,997 log 17149 140299779950336 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 10, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:38:11,025 basehttp 17149 140299779950336 "GET /account/register/ HTTP/1.1" 500 185186
+ERROR 2021-02-20 10:38:11,025 basehttp 17149 140299779950336 "GET /account/register/ HTTP/1.1" 500 185186
+ERROR 2021-02-20 10:39:23,840 log 17149 140299779950336 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 10, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:39:23,840 log 17149 140299779950336 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 10, in get
+    return render(request, 'account/register.html')
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 87, in reverse
+    return iri_to_uri(resolver._reverse_with_prefix(view, prefix, *args, **kwargs))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/resolvers.py", line 685, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'login' not found. 'login' is not a valid view function or pattern name.
+ERROR 2021-02-20 10:39:23,864 basehttp 17149 140299779950336 "GET /account/register/ HTTP/1.1" 500 185177
+ERROR 2021-02-20 10:39:23,864 basehttp 17149 140299779950336 "GET /account/register/ HTTP/1.1" 500 185177
+WARNING 2021-02-20 11:51:40,333 log 23264 140486312986368 Forbidden (CSRF token missing or incorrect.): /account/register/
+WARNING 2021-02-20 11:51:40,361 basehttp 23264 140486312986368 "POST /account/register/ HTTP/1.1" 403 12455
+WARNING 2021-02-20 11:51:40,361 basehttp 23264 140486312986368 "POST /account/register/ HTTP/1.1" 403 12455
+ERROR 2021-02-20 12:30:37,487 log 25546 139941979879168 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 36, in post
+    if not validate_email(email):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/validators.py", line 199, in __call__
+    raise ValidationError(self.message, code=self.code)
+django.core.exceptions.ValidationError: ['Enter a valid email address.']
+ERROR 2021-02-20 12:30:37,487 log 25546 139941979879168 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 36, in post
+    if not validate_email(email):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/validators.py", line 199, in __call__
+    raise ValidationError(self.message, code=self.code)
+django.core.exceptions.ValidationError: ['Enter a valid email address.']
+ERROR 2021-02-20 12:30:38,087 basehttp 25546 139941979879168 "POST /account/register/ HTTP/1.1" 500 99610
+ERROR 2021-02-20 12:30:38,087 basehttp 25546 139941979879168 "POST /account/register/ HTTP/1.1" 500 99610
+ERROR 2021-02-20 12:35:52,586 log 26470 140359746328320 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 35, in post
+    is_valid = validate_email(email, verify=True)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/validate_email.py", line 131, in validate_email
+    raise Exception('For check the mx records or check if the email exists you must '
+Exception: For check the mx records or check if the email exists you must have installed pyDNS python package
+ERROR 2021-02-20 12:35:52,586 log 26470 140359746328320 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 35, in post
+    is_valid = validate_email(email, verify=True)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/validate_email.py", line 131, in validate_email
+    raise Exception('For check the mx records or check if the email exists you must '
+Exception: For check the mx records or check if the email exists you must have installed pyDNS python package
+ERROR 2021-02-20 12:35:52,669 basehttp 26470 140359746328320 "POST /account/register/ HTTP/1.1" 500 100139
+ERROR 2021-02-20 12:35:52,669 basehttp 26470 140359746328320 "POST /account/register/ HTTP/1.1" 500 100139
+ERROR 2021-02-20 13:35:10,444 log 30638 139805845620480 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 13, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 79, in post
+    email_temp.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/message.py", line 241, in get_connection
+    self.connection = get_connection(fail_silently=fail_silently)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/__init__.py", line 34, in get_connection
+    klass = import_string(backend or settings.EMAIL_BACKEND)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 15, in import_string
+    raise ImportError("%s doesn't look like a module path" % dotted_path) from err
+ImportError:  doesn't look like a module path
+ERROR 2021-02-20 13:35:10,444 log 30638 139805845620480 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 13, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 79, in post
+    email_temp.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/message.py", line 241, in get_connection
+    self.connection = get_connection(fail_silently=fail_silently)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/__init__.py", line 34, in get_connection
+    klass = import_string(backend or settings.EMAIL_BACKEND)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 15, in import_string
+    raise ImportError("%s doesn't look like a module path" % dotted_path) from err
+ImportError:  doesn't look like a module path
+ERROR 2021-02-20 13:35:10,557 basehttp 30638 139805845620480 "POST /account/register/ HTTP/1.1" 500 116347
+ERROR 2021-02-20 13:35:10,557 basehttp 30638 139805845620480 "POST /account/register/ HTTP/1.1" 500 116347
+ERROR 2021-02-20 13:37:10,313 log 30741 139697300961024 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 13, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 79, in post
+    email_temp.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/message.py", line 241, in get_connection
+    self.connection = get_connection(fail_silently=fail_silently)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/__init__.py", line 34, in get_connection
+    klass = import_string(backend or settings.EMAIL_BACKEND)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 15, in import_string
+    raise ImportError("%s doesn't look like a module path" % dotted_path) from err
+ImportError:  doesn't look like a module path
+ERROR 2021-02-20 13:37:10,313 log 30741 139697300961024 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 13, in import_string
+    module_path, class_name = dotted_path.rsplit('.', 1)
+ValueError: not enough values to unpack (expected 2, got 1)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 79, in post
+    email_temp.send()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/message.py", line 241, in get_connection
+    self.connection = get_connection(fail_silently=fail_silently)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/mail/__init__.py", line 34, in get_connection
+    klass = import_string(backend or settings.EMAIL_BACKEND)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/utils/module_loading.py", line 15, in import_string
+    raise ImportError("%s doesn't look like a module path" % dotted_path) from err
+ImportError:  doesn't look like a module path
+ERROR 2021-02-20 13:37:10,400 basehttp 30741 139697300961024 "POST /account/register/ HTTP/1.1" 500 116347
+ERROR 2021-02-20 13:37:10,400 basehttp 30741 139697300961024 "POST /account/register/ HTTP/1.1" 500 116347
+ERROR 2021-02-20 14:10:24,328 log 32334 140408251741952 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 74, in post
+    settings.base.EMAIL_HOST_USER,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'base'
+ERROR 2021-02-20 14:10:24,328 log 32334 140408251741952 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/views/generic/base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/src/account/views.py", line 74, in post
+    settings.base.EMAIL_HOST_USER,
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'base'
+ERROR 2021-02-20 14:10:24,429 basehttp 32334 140408251741952 "POST /account/register/ HTTP/1.1" 500 99824
+ERROR 2021-02-20 14:10:24,429 basehttp 32334 140408251741952 "POST /account/register/ HTTP/1.1" 500 99824
+WARNING 2021-02-20 14:12:16,834 base 32614 140598622381824 Session data corrupted
+WARNING 2021-02-20 14:12:24,071 base 32614 140598622381824 Session data corrupted
+WARNING 2021-02-20 14:12:24,176 base 32614 140598622381824 Session data corrupted
+WARNING 2021-02-20 14:12:32,929 base 32614 140598622381824 Session data corrupted
+WARNING 2021-02-20 14:13:05,060 log 32614 140598622381824 Forbidden (CSRF token missing or incorrect.): /account/register/
+WARNING 2021-02-20 14:13:05,092 basehttp 32614 140598622381824 "POST /account/register/ HTTP/1.1" 403 12455
+WARNING 2021-02-20 14:13:05,092 basehttp 32614 140598622381824 "POST /account/register/ HTTP/1.1" 403 12455
+WARNING 2021-02-20 15:10:17,870 views 5694 139940545169152 request is processing
+WARNING 2021-02-20 15:10:35,667 log 5694 139940545169152 Unauthorized: /account/login/
+WARNING 2021-02-20 15:10:35,667 log 5694 139940545169152 Unauthorized: /account/login/
+WARNING 2021-02-20 15:10:35,667 basehttp 5694 139940545169152 "POST /account/login/ HTTP/1.1" 401 14761
+WARNING 2021-02-20 15:10:35,667 basehttp 5694 139940545169152 "POST /account/login/ HTTP/1.1" 401 14761
+WARNING 2021-02-20 15:11:01,133 log 5795 140410992076544 Unauthorized: /account/login/
+WARNING 2021-02-20 15:11:01,133 log 5795 140410992076544 Unauthorized: /account/login/
+WARNING 2021-02-20 15:11:01,134 basehttp 5795 140410992076544 "POST /account/login/ HTTP/1.1" 401 13875
+WARNING 2021-02-20 15:11:01,134 basehttp 5795 140410992076544 "POST /account/login/ HTTP/1.1" 401 13875
+WARNING 2021-02-20 15:11:11,466 log 5795 140410992076544 Unauthorized: /account/login/
+WARNING 2021-02-20 15:11:11,466 log 5795 140410992076544 Unauthorized: /account/login/
+WARNING 2021-02-20 15:11:11,467 basehttp 5795 140410992076544 "POST /account/login/ HTTP/1.1" 401 13875
+WARNING 2021-02-20 15:11:11,467 basehttp 5795 140410992076544 "POST /account/login/ HTTP/1.1" 401 13875
+WARNING 2021-02-20 15:13:40,207 log 6050 139777489929984 Not Found: /home
+WARNING 2021-02-20 15:13:40,207 log 6050 139777489929984 Not Found: /home
+WARNING 2021-02-20 15:13:40,211 basehttp 6050 139777489929984 "GET /home HTTP/1.1" 404 12510
+WARNING 2021-02-20 15:13:40,211 basehttp 6050 139777489929984 "GET /home HTTP/1.1" 404 12510
+WARNING 2021-02-20 15:14:01,684 log 6050 139777489929984 Not Found: /home/
+WARNING 2021-02-20 15:14:01,684 log 6050 139777489929984 Not Found: /home/
+WARNING 2021-02-20 15:14:01,686 basehttp 6050 139777489929984 "GET /home/ HTTP/1.1" 404 12514
+WARNING 2021-02-20 15:14:01,686 basehttp 6050 139777489929984 "GET /home/ HTTP/1.1" 404 12514
+WARNING 2021-02-20 15:15:52,754 log 6268 139724454491904 Not Found: /home/
+WARNING 2021-02-20 15:15:52,754 log 6268 139724454491904 Not Found: /home/
+WARNING 2021-02-20 15:15:52,755 basehttp 6268 139724454491904 "GET /home/ HTTP/1.1" 404 12514
+WARNING 2021-02-20 15:15:52,755 basehttp 6268 139724454491904 "GET /home/ HTTP/1.1" 404 12514
+WARNING 2021-02-20 15:16:07,722 log 6368 140216745518848 Not Found: /home/
+WARNING 2021-02-20 15:16:07,722 log 6368 140216745518848 Not Found: /home/
+WARNING 2021-02-20 15:16:07,723 basehttp 6368 140216745518848 "GET /home/ HTTP/1.1" 404 12514
+WARNING 2021-02-20 15:16:07,723 basehttp 6368 140216745518848 "GET /home/ HTTP/1.1" 404 12514
+WARNING 2021-02-20 15:16:09,250 log 6368 140216745518848 Not Found: /home/
+WARNING 2021-02-20 15:16:09,250 log 6368 140216745518848 Not Found: /home/
+WARNING 2021-02-20 15:16:09,252 basehttp 6368 140216745518848 "GET /home/ HTTP/1.1" 404 12514
+WARNING 2021-02-20 15:16:09,252 basehttp 6368 140216745518848 "GET /home/ HTTP/1.1" 404 12514
+WARNING 2021-02-20 15:16:38,178 views 6368 140216745518848 request is processing
+WARNING 2021-02-20 15:16:45,615 views 6437 140469402720000 request is processing
+WARNING 2021-02-20 15:16:47,187 views 6437 140469402720000 request is processing
+WARNING 2021-02-20 15:16:49,602 views 6437 140469402720000 request is processing
+WARNING 2021-02-20 15:17:46,483 views 6437 140469402720000 request is processing
+WARNING 2021-02-20 15:18:57,187 views 6634 140298591831808 request is processing
+WARNING 2021-02-20 15:19:01,384 views 6634 140298591831808 request is processing
+WARNING 2021-02-20 15:19:08,387 views 6659 140634207811328 request is processing
+WARNING 2021-02-20 15:22:01,724 views 6893 140305670706944 request is processing
+WARNING 2021-02-20 15:22:03,524 views 6893 140305670706944 request is processing
+WARNING 2021-02-20 15:22:19,352 views 6971 139937377441536 request is processing
+WARNING 2021-02-20 15:23:27,019 views 7098 140127493908224 request is processing
+WARNING 2021-02-20 15:24:42,142 views 7171 140008910276352 request is processing
+WARNING 2021-02-20 15:29:08,759 views 7643 139695499319040 request is processing
+WARNING 2021-02-20 15:31:40,148 log 7940 139741352523520 Unauthorized: /account/login/
+WARNING 2021-02-20 15:31:40,148 log 7940 139741352523520 Unauthorized: /account/login/
+WARNING 2021-02-20 15:31:40,149 basehttp 7940 139741352523520 "POST /account/login/ HTTP/1.1" 401 13955
+WARNING 2021-02-20 15:31:40,149 basehttp 7940 139741352523520 "POST /account/login/ HTTP/1.1" 401 13955
+WARNING 2021-02-20 15:31:51,394 views 7940 139741352523520 request is processing
+WARNING 2021-02-20 15:37:02,989 views 8405 139758667732736 request is processing
+WARNING 2021-02-20 15:37:05,424 log 8405 139758667732736 Forbidden (CSRF token missing or incorrect.): /account/logout/
+WARNING 2021-02-20 15:37:05,454 basehttp 8405 139758667732736 "POST /account/logout/ HTTP/1.1" 403 12447
+WARNING 2021-02-20 15:37:05,454 basehttp 8405 139758667732736 "POST /account/logout/ HTTP/1.1" 403 12447
+WARNING 2021-02-20 15:37:29,945 base 8405 139758667732736 Method Not Allowed (GET): /account/logout/
+WARNING 2021-02-20 15:37:29,945 base 8405 139758667732736 Method Not Allowed (GET): /account/logout/
+WARNING 2021-02-20 15:37:29,974 log 8405 139758667732736 Method Not Allowed: /account/logout/
+WARNING 2021-02-20 15:37:29,974 log 8405 139758667732736 Method Not Allowed: /account/logout/
+WARNING 2021-02-20 15:37:29,975 basehttp 8405 139758667732736 "GET /account/logout/ HTTP/1.1" 405 0
+WARNING 2021-02-20 15:37:29,975 basehttp 8405 139758667732736 "GET /account/logout/ HTTP/1.1" 405 0
