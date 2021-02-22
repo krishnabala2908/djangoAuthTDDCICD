@@ -8,4 +8,8 @@ services:
 install:
   - pipenv install
 script:
-  - python src/manage.py test
+  - cd src
+  - coverage run --source="account" manage.py test && coverage report
+
+after_success:
+  - codecov 
