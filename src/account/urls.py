@@ -8,4 +8,6 @@ urlpatterns = [
     path('logout/', views.LogoutView.as_view(), name='logout'),
     path('', login_required(views.HomeView.as_view()), name='accountshome'),
     path('activate/<uidb64>/<token>/', views.ActivateAccountView.as_view(), name='activate'),
+    path('req-reset-email/', views.RequestResetEmailView.as_view(), name='req-reset-email'),
+    path('set-new-password/<uidb64>/<token>/', views.SetNewPasswordView.as_view(), name='set-new-password'),
 ]

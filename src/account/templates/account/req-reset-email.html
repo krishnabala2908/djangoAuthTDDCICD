@@ -1,0 +1,64 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<div class="row">
+  <div class="col-md-3"></div>
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="card mt-5">
+          <img
+            src=" {% static 'bootstrap/img/logo.jpg' %} "
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body text-center">
+            <h5 class="card-title text-muted">
+              Provide Email address to get reset instructions
+            </h5>
+            <!-- <p class="card-text"></p> -->
+
+            {% include "account/messages.html" %}
+
+            <form action=" {% url 'req-reset-email' %} " method="post">
+              {% csrf_token %}
+              <div class="form-group">
+                <input
+                  class="form-control"
+                  type="email"
+                  name="email"
+                  id="email"
+                  value="{{data.email }}"
+                  placeholder="Email"
+                  autofocus
+                />
+              </div>
+              <br />
+
+              <button type="submit" class="btn btn-sm btn-primary w-100">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- add last login block -->
+        <div class="card">
+          <div class="card-body text-center">
+            <p>
+              Already Having an Account?<a href=" {% url 'login' %} ">Login</a>
+            </p>
+            <p>
+              Don't have an Account?<a href=" {% url 'register' %} "
+                >Register</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+  <div class="col-md-3"></div>
+</div>
+
+{% endblock content %}
