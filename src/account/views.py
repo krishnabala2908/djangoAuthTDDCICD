@@ -57,7 +57,7 @@ class RegistrationView(View):
             context['has_error'] = True
 
         if context['has_error']:
-            return render(request, 'account/register.html', context=context)
+            return render(request, 'account/register.html', context=context, status=400)
 
         user = User.objects.create_user(username=username, email=email)
         user.set_password(password1)

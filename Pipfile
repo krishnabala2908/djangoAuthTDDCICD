@@ -30,6 +30,7 @@ zipp = "==3.4.0"
 Django = "==3.1.6"
 validate-email = "*"
 six = "*"
+codecov = "*"
 
 [dev-packages]
 

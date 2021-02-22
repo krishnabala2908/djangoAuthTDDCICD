@@ -7,5 +7,5 @@ logger = logging.getLogger('django')
 
 @login_required
 def home(request):
-    logger.warning('request is processing')
+    # logger.warning('request is processing')
     return render(request, 'core/home.html', {})

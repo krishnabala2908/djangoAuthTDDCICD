@@ -1996,3 +1996,1378 @@ INFO 2021-02-20 15:37:38,852 basehttp 8405 139758667732736 "GET /account/login/ 
 INFO 2021-02-20 15:37:38,852 basehttp 8405 139758667732736 "GET /account/login/ HTTP/1.1" 200 13879
 INFO 2021-02-20 15:37:44,465 basehttp 8405 139758667732736 "GET /account/login/ HTTP/1.1" 200 13801
 INFO 2021-02-20 15:37:44,465 basehttp 8405 139758667732736 "GET /account/login/ HTTP/1.1" 200 13801
+ERROR 2021-02-20 17:34:24,629 log 18002 139808425523008 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:34:24,629 log 18002 139808425523008 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:37:55,195 log 18162 139662480746304 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:37:55,195 log 18162 139662480746304 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:41:06,650 log 18449 140696882370368 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:41:06,650 log 18449 140696882370368 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:45:16,486 log 19036 139890722793280 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:45:16,486 log 19036 139890722793280 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:45:29,776 log 19060 140332250814272 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:45:29,776 log 19060 140332250814272 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:46:58,029 log 19270 140160336754496 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+ERROR 2021-02-20 17:46:58,029 log 19270 140160336754496 Internal Server Error: /account/register/
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'HistoryPanel' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 72, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/toolbar.py", line 69, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 211, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader_tags.py", line 192, in render
+    return template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 172, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 312, in render
+    return nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 988, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 671, in resolve
+    obj = self.var.resolve(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 796, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/debug_toolbar/panels/history/panel.py", line 88, in content
+    initial={"store_id": self.toolbar.store_id}
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 170, in render
+    return self._render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/test/utils.py", line 96, in instrumented_test_render
+    return self.nodelist.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/base.py", line 905, in render_annotated
+    return self.render(context)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/template/defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/krishna/Desktop/ProjectTemplates/djangoAuthTDDCICD/env/lib/python3.6/site-packages/django/urls/base.py", line 83, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+WARNING 2021-02-20 18:04:16,843 log 20911 140077526964032 Bad Request: /account/register/
+WARNING 2021-02-20 18:04:16,843 log 20911 140077526964032 Bad Request: /account/register/
+WARNING 2021-02-20 18:06:03,776 log 21064 140535154939712 Bad Request: /account/register/
+WARNING 2021-02-20 18:06:03,776 log 21064 140535154939712 Bad Request: /account/register/
+WARNING 2021-02-20 18:06:03,783 log 21064 140535154939712 Bad Request: /account/register/
+WARNING 2021-02-20 18:06:03,783 log 21064 140535154939712 Bad Request: /account/register/
+WARNING 2021-02-20 18:06:30,482 log 21137 140466045683520 Bad Request: /account/register/
+WARNING 2021-02-20 18:06:30,482 log 21137 140466045683520 Bad Request: /account/register/
+WARNING 2021-02-20 18:06:30,490 log 21137 140466045683520 Bad Request: /account/register/
+WARNING 2021-02-20 18:06:30,490 log 21137 140466045683520 Bad Request: /account/register/
+WARNING 2021-02-20 18:10:00,410 log 21458 139977764251456 Bad Request: /account/register/
+WARNING 2021-02-20 18:10:00,410 log 21458 139977764251456 Bad Request: /account/register/
+WARNING 2021-02-20 18:10:00,419 log 21458 139977764251456 Bad Request: /account/register/
+WARNING 2021-02-20 18:10:00,419 log 21458 139977764251456 Bad Request: /account/register/
+WARNING 2021-02-20 18:10:00,428 log 21458 139977764251456 Bad Request: /account/register/
+WARNING 2021-02-20 18:10:00,428 log 21458 139977764251456 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:08,926 log 21654 139682677978944 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:08,926 log 21654 139682677978944 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:08,933 log 21654 139682677978944 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:08,933 log 21654 139682677978944 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:08,943 log 21654 139682677978944 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:08,943 log 21654 139682677978944 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:30,077 log 21744 140275647620928 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:30,077 log 21744 140275647620928 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:30,084 log 21744 140275647620928 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:30,084 log 21744 140275647620928 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:30,093 log 21744 140275647620928 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:30,093 log 21744 140275647620928 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:30,100 log 21744 140275647620928 Bad Request: /account/register/
+WARNING 2021-02-20 18:12:30,100 log 21744 140275647620928 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:15,844 log 21945 140712916969280 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:15,844 log 21945 140712916969280 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:15,852 log 21945 140712916969280 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:15,852 log 21945 140712916969280 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:15,861 log 21945 140712916969280 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:15,861 log 21945 140712916969280 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:32,906 log 21976 140276158793536 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:32,906 log 21976 140276158793536 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:32,913 log 21976 140276158793536 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:32,913 log 21976 140276158793536 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:32,921 log 21976 140276158793536 Bad Request: /account/register/
+WARNING 2021-02-20 18:15:32,921 log 21976 140276158793536 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:11,026 log 22039 140516031297344 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:11,026 log 22039 140516031297344 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:11,034 log 22039 140516031297344 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:11,034 log 22039 140516031297344 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:11,043 log 22039 140516031297344 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:11,043 log 22039 140516031297344 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:11,203 log 22039 140516031297344 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:11,203 log 22039 140516031297344 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:28,825 log 22087 140035800966976 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:28,825 log 22087 140035800966976 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:28,833 log 22087 140035800966976 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:28,833 log 22087 140035800966976 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:28,842 log 22087 140035800966976 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:28,842 log 22087 140035800966976 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:29,009 log 22087 140035800966976 Bad Request: /account/register/
+WARNING 2021-02-20 18:16:29,009 log 22087 140035800966976 Bad Request: /account/register/
+WARNING 2021-02-20 18:19:39,597 log 22319 140494635595584 Bad Request: /account/register/
+WARNING 2021-02-20 18:19:39,597 log 22319 140494635595584 Bad Request: /account/register/
+WARNING 2021-02-20 18:19:39,604 log 22319 140494635595584 Bad Request: /account/register/
+WARNING 2021-02-20 18:19:39,604 log 22319 140494635595584 Bad Request: /account/register/
+WARNING 2021-02-20 18:19:39,613 log 22319 140494635595584 Bad Request: /account/register/
+WARNING 2021-02-20 18:19:39,613 log 22319 140494635595584 Bad Request: /account/register/
+WARNING 2021-02-20 18:19:39,777 log 22319 140494635595584 Bad Request: /account/register/
+WARNING 2021-02-20 18:19:39,777 log 22319 140494635595584 Bad Request: /account/register/
+WARNING 2021-02-20 18:25:37,731 log 22765 139671406114624 Bad Request: /account/register/
+WARNING 2021-02-20 18:25:37,731 log 22765 139671406114624 Bad Request: /account/register/
+WARNING 2021-02-20 18:25:37,738 log 22765 139671406114624 Bad Request: /account/register/
+WARNING 2021-02-20 18:25:37,738 log 22765 139671406114624 Bad Request: /account/register/
+WARNING 2021-02-20 18:25:37,749 log 22765 139671406114624 Bad Request: /account/register/
+WARNING 2021-02-20 18:25:37,749 log 22765 139671406114624 Bad Request: /account/register/
+WARNING 2021-02-20 18:25:37,913 log 22765 139671406114624 Bad Request: /account/register/
+WARNING 2021-02-20 18:25:37,913 log 22765 139671406114624 Bad Request: /account/register/
+INFO 2021-02-20 21:45:50,009 autoreload 9623 140556623472448 Watching for file changes with StatReloader
+WARNING 2021-02-20 22:05:06,561 log 10935 139775173011264 Bad Request: /account/register/
+WARNING 2021-02-20 22:05:06,561 log 10935 139775173011264 Bad Request: /account/register/
+WARNING 2021-02-20 22:05:06,591 log 10935 139775173011264 Bad Request: /account/register/
+WARNING 2021-02-20 22:05:06,591 log 10935 139775173011264 Bad Request: /account/register/
+WARNING 2021-02-20 22:05:06,600 log 10935 139775173011264 Bad Request: /account/register/
+WARNING 2021-02-20 22:05:06,600 log 10935 139775173011264 Bad Request: /account/register/
+WARNING 2021-02-20 22:05:06,763 log 10935 139775173011264 Bad Request: /account/register/
+WARNING 2021-02-20 22:05:06,763 log 10935 139775173011264 Bad Request: /account/register/
+WARNING 2021-02-20 22:28:50,839 log 11939 139932300691264 Bad Request: /account/register/
+WARNING 2021-02-20 22:28:50,839 log 11939 139932300691264 Bad Request: /account/register/
+WARNING 2021-02-20 22:28:50,847 log 11939 139932300691264 Bad Request: /account/register/
+WARNING 2021-02-20 22:28:50,847 log 11939 139932300691264 Bad Request: /account/register/
+WARNING 2021-02-20 22:28:50,855 log 11939 139932300691264 Bad Request: /account/register/
+WARNING 2021-02-20 22:28:50,855 log 11939 139932300691264 Bad Request: /account/register/
+WARNING 2021-02-20 22:28:51,022 log 11939 139932300691264 Bad Request: /account/register/
+WARNING 2021-02-20 22:28:51,022 log 11939 139932300691264 Bad Request: /account/register/
+WARNING 2021-02-20 22:31:56,405 log 12116 140472940885824 Unauthorized: /account/login/
+WARNING 2021-02-20 22:31:56,405 log 12116 140472940885824 Unauthorized: /account/login/
+WARNING 2021-02-20 22:31:56,584 log 12116 140472940885824 Unauthorized: /account/login/
+WARNING 2021-02-20 22:31:56,584 log 12116 140472940885824 Unauthorized: /account/login/
+WARNING 2021-02-20 22:31:56,776 log 12116 140472940885824 Bad Request: /account/register/
+WARNING 2021-02-20 22:31:56,776 log 12116 140472940885824 Bad Request: /account/register/
+WARNING 2021-02-20 22:31:56,783 log 12116 140472940885824 Bad Request: /account/register/
+WARNING 2021-02-20 22:31:56,783 log 12116 140472940885824 Bad Request: /account/register/
+WARNING 2021-02-20 22:31:56,795 log 12116 140472940885824 Bad Request: /account/register/
+WARNING 2021-02-20 22:31:56,795 log 12116 140472940885824 Bad Request: /account/register/
+WARNING 2021-02-20 22:31:56,983 log 12116 140472940885824 Bad Request: /account/register/
+WARNING 2021-02-20 22:31:56,983 log 12116 140472940885824 Bad Request: /account/register/
+WARNING 2021-02-20 22:36:59,913 log 12559 140044985059136 Unauthorized: /account/login/
+WARNING 2021-02-20 22:36:59,913 log 12559 140044985059136 Unauthorized: /account/login/
+WARNING 2021-02-20 22:37:00,097 log 12559 140044985059136 Unauthorized: /account/login/
+WARNING 2021-02-20 22:37:00,097 log 12559 140044985059136 Unauthorized: /account/login/
+WARNING 2021-02-20 22:37:00,298 log 12559 140044985059136 Unauthorized: /account/login/
+WARNING 2021-02-20 22:37:00,298 log 12559 140044985059136 Unauthorized: /account/login/
+WARNING 2021-02-20 22:37:00,511 log 12559 140044985059136 Bad Request: /account/register/
+WARNING 2021-02-20 22:37:00,511 log 12559 140044985059136 Bad Request: /account/register/
+WARNING 2021-02-20 22:37:00,519 log 12559 140044985059136 Bad Request: /account/register/
+WARNING 2021-02-20 22:37:00,519 log 12559 140044985059136 Bad Request: /account/register/
+WARNING 2021-02-20 22:37:00,529 log 12559 140044985059136 Bad Request: /account/register/
+WARNING 2021-02-20 22:37:00,529 log 12559 140044985059136 Bad Request: /account/register/
+WARNING 2021-02-20 22:37:00,693 log 12559 140044985059136 Bad Request: /account/register/
+WARNING 2021-02-20 22:37:00,693 log 12559 140044985059136 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:22,360 log 12712 139715982370624 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:22,360 log 12712 139715982370624 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:22,542 log 12712 139715982370624 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:22,542 log 12712 139715982370624 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:22,877 log 12712 139715982370624 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:22,877 log 12712 139715982370624 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:22,884 log 12712 139715982370624 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:22,884 log 12712 139715982370624 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:22,893 log 12712 139715982370624 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:22,893 log 12712 139715982370624 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:23,058 log 12712 139715982370624 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:23,058 log 12712 139715982370624 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:34,778 log 12734 140506178512704 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:34,778 log 12734 140506178512704 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:34,958 log 12734 140506178512704 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:34,958 log 12734 140506178512704 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:35,121 log 12734 140506178512704 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:35,121 log 12734 140506178512704 Unauthorized: /account/login/
+WARNING 2021-02-20 22:40:35,290 log 12734 140506178512704 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:35,290 log 12734 140506178512704 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:35,298 log 12734 140506178512704 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:35,298 log 12734 140506178512704 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:35,306 log 12734 140506178512704 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:35,306 log 12734 140506178512704 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:35,473 log 12734 140506178512704 Bad Request: /account/register/
+WARNING 2021-02-20 22:40:35,473 log 12734 140506178512704 Bad Request: /account/register/
+WARNING 2021-02-20 22:42:07,598 log 12869 139696892487488 Unauthorized: /account/login/
+WARNING 2021-02-20 22:42:07,598 log 12869 139696892487488 Unauthorized: /account/login/
+WARNING 2021-02-20 22:42:07,780 log 12869 139696892487488 Unauthorized: /account/login/
+WARNING 2021-02-20 22:42:07,780 log 12869 139696892487488 Unauthorized: /account/login/
+WARNING 2021-02-20 22:42:07,953 log 12869 139696892487488 Unauthorized: /account/login/
+WARNING 2021-02-20 22:42:07,953 log 12869 139696892487488 Unauthorized: /account/login/
+WARNING 2021-02-20 22:42:08,124 log 12869 139696892487488 Bad Request: /account/register/
+WARNING 2021-02-20 22:42:08,124 log 12869 139696892487488 Bad Request: /account/register/
+WARNING 2021-02-20 22:42:08,132 log 12869 139696892487488 Bad Request: /account/register/
+WARNING 2021-02-20 22:42:08,132 log 12869 139696892487488 Bad Request: /account/register/
+WARNING 2021-02-20 22:42:08,140 log 12869 139696892487488 Bad Request: /account/register/
+WARNING 2021-02-20 22:42:08,140 log 12869 139696892487488 Bad Request: /account/register/
+WARNING 2021-02-20 22:42:08,307 log 12869 139696892487488 Bad Request: /account/register/
+WARNING 2021-02-20 22:42:08,307 log 12869 139696892487488 Bad Request: /account/register/
+WARNING 2021-02-20 22:43:46,075 log 13040 139745105753920 Unauthorized: /account/login/
+WARNING 2021-02-20 22:43:46,075 log 13040 139745105753920 Unauthorized: /account/login/
+WARNING 2021-02-20 22:43:46,258 log 13040 139745105753920 Unauthorized: /account/login/
+WARNING 2021-02-20 22:43:46,258 log 13040 139745105753920 Unauthorized: /account/login/
+WARNING 2021-02-20 22:43:46,420 log 13040 139745105753920 Unauthorized: /account/login/
+WARNING 2021-02-20 22:43:46,420 log 13040 139745105753920 Unauthorized: /account/login/
+WARNING 2021-02-20 22:43:46,587 log 13040 139745105753920 Bad Request: /account/register/
+WARNING 2021-02-20 22:43:46,587 log 13040 139745105753920 Bad Request: /account/register/
+WARNING 2021-02-20 22:43:46,598 log 13040 139745105753920 Bad Request: /account/register/
+WARNING 2021-02-20 22:43:46,598 log 13040 139745105753920 Bad Request: /account/register/
+WARNING 2021-02-20 22:43:46,607 log 13040 139745105753920 Bad Request: /account/register/
+WARNING 2021-02-20 22:43:46,607 log 13040 139745105753920 Bad Request: /account/register/
+WARNING 2021-02-20 22:43:46,774 log 13040 139745105753920 Bad Request: /account/register/
+WARNING 2021-02-20 22:43:46,774 log 13040 139745105753920 Bad Request: /account/register/
+WARNING 2021-02-20 22:44:23,866 log 13089 140334376924992 Unauthorized: /account/login/
+WARNING 2021-02-20 22:44:23,866 log 13089 140334376924992 Unauthorized: /account/login/
+WARNING 2021-02-20 22:44:24,049 log 13089 140334376924992 Unauthorized: /account/login/
+WARNING 2021-02-20 22:44:24,049 log 13089 140334376924992 Unauthorized: /account/login/
+WARNING 2021-02-20 22:44:24,215 log 13089 140334376924992 Bad Request: /account/register/
+WARNING 2021-02-20 22:44:24,215 log 13089 140334376924992 Bad Request: /account/register/
+WARNING 2021-02-20 22:44:24,223 log 13089 140334376924992 Bad Request: /account/register/
+WARNING 2021-02-20 22:44:24,223 log 13089 140334376924992 Bad Request: /account/register/
+WARNING 2021-02-20 22:44:24,234 log 13089 140334376924992 Bad Request: /account/register/
+WARNING 2021-02-20 22:44:24,234 log 13089 140334376924992 Bad Request: /account/register/
+WARNING 2021-02-20 22:44:24,396 log 13089 140334376924992 Bad Request: /account/register/
+WARNING 2021-02-20 22:44:24,396 log 13089 140334376924992 Bad Request: /account/register/
+WARNING 2021-02-20 22:45:42,707 log 13253 140596886116160 Unauthorized: /account/login/
+WARNING 2021-02-20 22:45:42,707 log 13253 140596886116160 Unauthorized: /account/login/
+WARNING 2021-02-20 22:45:42,893 log 13253 140596886116160 Unauthorized: /account/login/
+WARNING 2021-02-20 22:45:42,893 log 13253 140596886116160 Unauthorized: /account/login/
+WARNING 2021-02-20 22:45:43,061 log 13253 140596886116160 Bad Request: /account/register/
+WARNING 2021-02-20 22:45:43,061 log 13253 140596886116160 Bad Request: /account/register/
+WARNING 2021-02-20 22:45:43,069 log 13253 140596886116160 Bad Request: /account/register/
+WARNING 2021-02-20 22:45:43,069 log 13253 140596886116160 Bad Request: /account/register/
+WARNING 2021-02-20 22:45:43,080 log 13253 140596886116160 Bad Request: /account/register/
+WARNING 2021-02-20 22:45:43,080 log 13253 140596886116160 Bad Request: /account/register/
+WARNING 2021-02-20 22:45:43,246 log 13253 140596886116160 Bad Request: /account/register/
+WARNING 2021-02-20 22:45:43,246 log 13253 140596886116160 Bad Request: /account/register/
+WARNING 2021-02-20 22:46:28,488 log 13354 140199922505536 Unauthorized: /account/login/
+WARNING 2021-02-20 22:46:28,488 log 13354 140199922505536 Unauthorized: /account/login/
+WARNING 2021-02-20 22:46:28,677 log 13354 140199922505536 Unauthorized: /account/login/
+WARNING 2021-02-20 22:46:28,677 log 13354 140199922505536 Unauthorized: /account/login/
+WARNING 2021-02-20 22:46:28,846 log 13354 140199922505536 Bad Request: /account/register/
+WARNING 2021-02-20 22:46:28,846 log 13354 140199922505536 Bad Request: /account/register/
+WARNING 2021-02-20 22:46:28,855 log 13354 140199922505536 Bad Request: /account/register/
+WARNING 2021-02-20 22:46:28,855 log 13354 140199922505536 Bad Request: /account/register/
+WARNING 2021-02-20 22:46:28,865 log 13354 140199922505536 Bad Request: /account/register/
+WARNING 2021-02-20 22:46:28,865 log 13354 140199922505536 Bad Request: /account/register/
+WARNING 2021-02-20 22:46:29,028 log 13354 140199922505536 Bad Request: /account/register/
+WARNING 2021-02-20 22:46:29,028 log 13354 140199922505536 Bad Request: /account/register/
+WARNING 2021-02-20 22:53:59,696 log 13980 139853568710464 Unauthorized: /account/login/
+WARNING 2021-02-20 22:53:59,696 log 13980 139853568710464 Unauthorized: /account/login/
+WARNING 2021-02-20 22:53:59,880 log 13980 139853568710464 Unauthorized: /account/login/
+WARNING 2021-02-20 22:53:59,880 log 13980 139853568710464 Unauthorized: /account/login/
+WARNING 2021-02-20 22:54:00,051 log 13980 139853568710464 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:00,051 log 13980 139853568710464 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:00,058 log 13980 139853568710464 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:00,058 log 13980 139853568710464 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:00,067 log 13980 139853568710464 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:00,067 log 13980 139853568710464 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:00,257 log 13980 139853568710464 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:00,257 log 13980 139853568710464 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:14,732 log 13986 140598458898240 Unauthorized: /account/login/
+WARNING 2021-02-20 22:54:14,732 log 13986 140598458898240 Unauthorized: /account/login/
+WARNING 2021-02-20 22:54:14,916 log 13986 140598458898240 Unauthorized: /account/login/
+WARNING 2021-02-20 22:54:14,916 log 13986 140598458898240 Unauthorized: /account/login/
+WARNING 2021-02-20 22:54:15,086 log 13986 140598458898240 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:15,086 log 13986 140598458898240 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:15,094 log 13986 140598458898240 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:15,094 log 13986 140598458898240 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:15,101 log 13986 140598458898240 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:15,101 log 13986 140598458898240 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:15,266 log 13986 140598458898240 Bad Request: /account/register/
+WARNING 2021-02-20 22:54:15,266 log 13986 140598458898240 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:15,799 log 14228 140269386454848 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:15,799 log 14228 140269386454848 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:16,048 log 14228 140269386454848 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:16,048 log 14228 140269386454848 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:16,291 log 14228 140269386454848 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:16,291 log 14228 140269386454848 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:16,303 log 14228 140269386454848 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:16,303 log 14228 140269386454848 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:16,314 log 14228 140269386454848 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:16,314 log 14228 140269386454848 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:16,525 log 14228 140269386454848 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:16,525 log 14228 140269386454848 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:38,428 log 14309 140284025476928 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:38,428 log 14309 140284025476928 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:38,675 log 14309 140284025476928 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:38,675 log 14309 140284025476928 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:38,885 log 14309 140284025476928 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:38,885 log 14309 140284025476928 Unauthorized: /account/login/
+WARNING 2021-02-20 22:56:39,117 log 14309 140284025476928 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:39,117 log 14309 140284025476928 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:39,128 log 14309 140284025476928 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:39,128 log 14309 140284025476928 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:39,138 log 14309 140284025476928 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:39,138 log 14309 140284025476928 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:39,355 log 14309 140284025476928 Bad Request: /account/register/
+WARNING 2021-02-20 22:56:39,355 log 14309 140284025476928 Bad Request: /account/register/
+WARNING 2021-02-20 22:58:40,586 log 14452 140429792847680 Unauthorized: /account/login/
+WARNING 2021-02-20 22:58:40,586 log 14452 140429792847680 Unauthorized: /account/login/
+WARNING 2021-02-20 22:58:40,814 log 14452 140429792847680 Unauthorized: /account/login/
+WARNING 2021-02-20 22:58:40,814 log 14452 140429792847680 Unauthorized: /account/login/
+WARNING 2021-02-20 22:58:41,035 log 14452 140429792847680 Bad Request: /account/register/
+WARNING 2021-02-20 22:58:41,035 log 14452 140429792847680 Bad Request: /account/register/
+WARNING 2021-02-20 22:58:41,047 log 14452 140429792847680 Bad Request: /account/register/
+WARNING 2021-02-20 22:58:41,047 log 14452 140429792847680 Bad Request: /account/register/
+WARNING 2021-02-20 22:58:41,059 log 14452 140429792847680 Bad Request: /account/register/
+WARNING 2021-02-20 22:58:41,059 log 14452 140429792847680 Bad Request: /account/register/
+WARNING 2021-02-20 22:58:41,271 log 14452 140429792847680 Bad Request: /account/register/
+WARNING 2021-02-20 22:58:41,271 log 14452 140429792847680 Bad Request: /account/register/
+WARNING 2021-02-20 23:09:57,010 log 15287 140613977065280 Unauthorized: /account/login/
+WARNING 2021-02-20 23:09:57,010 log 15287 140613977065280 Unauthorized: /account/login/
+WARNING 2021-02-20 23:09:57,170 log 15287 140613977065280 Unauthorized: /account/login/
+WARNING 2021-02-20 23:09:57,170 log 15287 140613977065280 Unauthorized: /account/login/
+WARNING 2021-02-20 23:09:57,354 log 15287 140613977065280 Unauthorized: /account/login/
+WARNING 2021-02-20 23:09:57,354 log 15287 140613977065280 Unauthorized: /account/login/
+WARNING 2021-02-20 23:09:57,522 log 15287 140613977065280 Unauthorized: /account/login/
+WARNING 2021-02-20 23:09:57,522 log 15287 140613977065280 Unauthorized: /account/login/
+WARNING 2021-02-20 23:09:57,698 log 15287 140613977065280 Bad Request: /account/register/
+WARNING 2021-02-20 23:09:57,698 log 15287 140613977065280 Bad Request: /account/register/
+WARNING 2021-02-20 23:09:57,707 log 15287 140613977065280 Bad Request: /account/register/
+WARNING 2021-02-20 23:09:57,707 log 15287 140613977065280 Bad Request: /account/register/
+WARNING 2021-02-20 23:09:57,718 log 15287 140613977065280 Bad Request: /account/register/
+WARNING 2021-02-20 23:09:57,718 log 15287 140613977065280 Bad Request: /account/register/
+WARNING 2021-02-20 23:09:57,882 log 15287 140613977065280 Bad Request: /account/register/
+WARNING 2021-02-20 23:09:57,882 log 15287 140613977065280 Bad Request: /account/register/
+WARNING 2021-02-20 23:10:28,118 log 15334 140598068270912 Unauthorized: /account/login/
+WARNING 2021-02-20 23:10:28,118 log 15334 140598068270912 Unauthorized: /account/login/
+WARNING 2021-02-20 23:10:28,278 log 15334 140598068270912 Unauthorized: /account/login/
+WARNING 2021-02-20 23:10:28,278 log 15334 140598068270912 Unauthorized: /account/login/
+WARNING 2021-02-20 23:10:28,462 log 15334 140598068270912 Unauthorized: /account/login/
+WARNING 2021-02-20 23:10:28,462 log 15334 140598068270912 Unauthorized: /account/login/
+WARNING 2021-02-20 23:10:28,630 log 15334 140598068270912 Unauthorized: /account/login/
+WARNING 2021-02-20 23:10:28,630 log 15334 140598068270912 Unauthorized: /account/login/
+WARNING 2021-02-20 23:10:28,803 log 15334 140598068270912 Bad Request: /account/register/
+WARNING 2021-02-20 23:10:28,803 log 15334 140598068270912 Bad Request: /account/register/
+WARNING 2021-02-20 23:10:28,811 log 15334 140598068270912 Bad Request: /account/register/
+WARNING 2021-02-20 23:10:28,811 log 15334 140598068270912 Bad Request: /account/register/
+WARNING 2021-02-20 23:10:28,822 log 15334 140598068270912 Bad Request: /account/register/
+WARNING 2021-02-20 23:10:28,822 log 15334 140598068270912 Bad Request: /account/register/
+WARNING 2021-02-20 23:10:28,985 log 15334 140598068270912 Bad Request: /account/register/
+WARNING 2021-02-20 23:10:28,985 log 15334 140598068270912 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:41,965 log 12792 140622405695296 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:41,965 log 12792 140622405695296 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:42,211 log 12792 140622405695296 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:42,211 log 12792 140622405695296 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:42,456 log 12792 140622405695296 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:42,456 log 12792 140622405695296 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:42,619 log 12792 140622405695296 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:42,619 log 12792 140622405695296 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:42,786 log 12792 140622405695296 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:42,786 log 12792 140622405695296 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:42,794 log 12792 140622405695296 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:42,794 log 12792 140622405695296 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:42,801 log 12792 140622405695296 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:42,801 log 12792 140622405695296 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:42,965 log 12792 140622405695296 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:42,965 log 12792 140622405695296 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:58,470 log 12822 140584712324928 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:58,470 log 12822 140584712324928 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:58,626 log 12822 140584712324928 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:58,626 log 12822 140584712324928 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:58,805 log 12822 140584712324928 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:58,805 log 12822 140584712324928 Unauthorized: /account/login/
+WARNING 2021-02-22 10:14:58,982 log 12822 140584712324928 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:58,982 log 12822 140584712324928 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:58,990 log 12822 140584712324928 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:58,990 log 12822 140584712324928 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:58,999 log 12822 140584712324928 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:58,999 log 12822 140584712324928 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:59,173 log 12822 140584712324928 Bad Request: /account/register/
+WARNING 2021-02-22 10:14:59,173 log 12822 140584712324928 Bad Request: /account/register/
